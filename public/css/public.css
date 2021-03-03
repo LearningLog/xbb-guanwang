@@ -42,3 +42,8 @@
     font-family: 'SourceHanSansCN-Normal';
     src : url('../font/SourceHanSansCN-Normal.ttf');
 }
+.flexJustify{
+    display: flex;
+    justify-content: center;
+}
+
