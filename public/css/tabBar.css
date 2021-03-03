@@ -1,0 +1,62 @@
+.tabBar {
+  width: 100%;
+  height: 76px;
+  background: #000000;
+}
+.tabBar .tab {
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+.tabBar .tab .left {
+  width: 144px;
+  height: 38px;
+}
+.tabBar .tab .left .logo {
+  width: 144px;
+  height: 38px;
+}
+.tabBar .tab .right > ol {
+  display: flex;
+  align-items: center;
+}
+.tabBar .tab .right > ol li {
+  height: 18px;
+  font-size: 18px;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+}
+.tabBar .tab .right > ol li:nth-child(1) {
+  color: #FFFFFF;
+  margin-right: 60px;
+}
+.tabBar .tab .right > ol li:nth-child(2) {
+  color: #7C7C7C;
+  margin-right: 63px;
+}
+.tabBar .tab .right > ol li:nth-child(3) {
+  color: #FFCF3B;
+  margin-right: 69px;
+}
+.tabBar .tab .right > ol li:nth-child(4) {
+  color: #FFCF3B;
+}
+.clogin {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clogin img {
+  width: 400px;
+  height: 256px;
+}

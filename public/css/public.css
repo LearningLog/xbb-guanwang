@@ -1,0 +1,44 @@
+.type-area {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.highlighted-title {
+  font-weight: bold;
+  color: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.highlighted-title:after {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 110%;
+  background: #FED83B;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 2px;
+  left: -5%;
+  z-index: -1;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Regular';
+    src : url('../font/SourceHanSansCN-Regular.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Bold';
+    src : url('../font/SourceHanSansCN-Bold.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Medium';
+    src : url('../font/SourceHanSansCN-Medium.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Normal';
+    src : url('../font/SourceHanSansCN-Normal.ttf');
+}
