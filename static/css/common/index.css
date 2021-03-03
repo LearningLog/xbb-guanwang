@@ -4,8 +4,15 @@
 .banner img {
   width: 100%;
 }
+.tab-itemb {
+  background: #FBFBFB;
+  padding: 80px 0 110px 0;
+}
 .tab-item {
-  margin-top: 20px;
+  position: relative;
+}
+.highlighted-title {
+  z-index: 2;
 }
 .highlighted-text {
   font-size: 14px;
@@ -21,5 +28,237 @@
   top: -10px;
 }
 .content {
-  padding: 30px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.content .left ol {
+  padding-top: 46px;
+}
+.content .left ol li {
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.content .left ol li .icon {
+  margin-right: 23px;
+  width: 26px;
+  height: 26px;
+}
+.content .left ol li .icon .cimg1 {
+  width: 26px;
+  height: 26px;
+}
+.content .left ol li .icon .cimg2 {
+  display: none;
+}
+.content .left ol li .nameTitle {
+  font-size: 26px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+.content .left ol .on {
+  margin-bottom: 42px;
+}
+.content .left ol .on .icon .cimg1 {
+  display: none;
+}
+.content .left ol .on .icon .cimg2 {
+  display: block;
+}
+.content .left ol .on .nameTitle {
+  font-size: 46px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #000000;
+  position: relative;
+}
+.content .left ol .on .nameTitle:after {
+  content: '';
+  display: inline-block;
+  width: 171px;
+  height: 6px;
+  background: #FED83B;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 6px;
+  z-index: -1;
+}
+.content .right {
+  position: relative;
+}
+.content .right .dianImg {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  z-index: 3;
+}
+.content .right .swiper {
+  width: 752px;
+  height: 426px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.content .right .swiper .swiper-container {
+  width: 752px;
+  height: 426px;
+}
+.content .right .swiper .swiper-pagination {
+  opacity: 0;
+}
+.content .right .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.content .right .swiper .swiper-slide img {
+  width: 752px;
+  height: 426px;
+}
+.tab-item-employment {
+  padding: 80px 0 96px 0;
+}
+.tab-item-employment .contentImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+  position: relative;
+  z-index: 2;
+}
+.tab-item-employment .contentImg img {
+  width: 1153px;
+  height: 645px;
+}
+.tab-item-employment .leftImg {
+  position: absolute;
+  left: 65px;
+  bottom: 63px;
+}
+.tab-item-employment .rightImg {
+  position: absolute;
+  right: 0px;
+  top: 134px;
+}
+.tab-item-problem {
+  width: 100%;
+  height: 600px;
+  background: #FBFBFB;
+}
+.tab-item-problem .problem {
+  position: relative;
+  top: 68px;
+}
+.tab-item-problem .problem .swiper {
+  width: 1140px;
+  height: 464px;
+  position: relative;
+  margin: 0 auto;
+}
+.tab-item-problem .problem .swiper .list {
+  position: absolute;
+  left: 805px;
+  bottom: 0;
+  z-index: 1000;
+}
+.tab-item-problem .problem .swiper .list ol {
+  display: flex;
+}
+.tab-item-problem .problem .swiper .list ol li {
+  width: 50px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+.tab-item-problem .problem .swiper .list ol li .img {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+.tab-item-problem .problem .swiper .list ol li .img img {
+  width: 36px;
+  height: 36px;
+}
+.tab-item-problem .problem .swiper .list ol li .img .img2 {
+  display: none;
+}
+.tab-item-problem .problem .swiper .list ol li span {
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+}
+.tab-item-problem .problem .swiper .list ol .on .img1 {
+  display: none;
+}
+.tab-item-problem .problem .swiper .list ol .on .img2 {
+  display: block !important;
+}
+.tab-item-problem .problem .swiper .list ol .on span {
+  color: #333333;
+}
+.tab-item-problem .problem .swiper .swiper-container {
+  width: 1140px;
+  height: 464px;
+}
+.tab-item-problem .problem .swiper .swiper-pagination {
+  opacity: 0;
+}
+.tab-item-problem .problem .swiper .swiper-slide {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-item-problem .problem .swiper .swiper-slide .imgBanner {
+  width: 696px;
+  height: 464px;
+}
+.tab-item-problem .problem .swiper .swiper-slide .imgBanner img {
+  width: 696px;
+  height: 464px;
+}
+.tab-item-problem .problem .swiper .swiper-slide .textBanner {
+  margin-left: 107px;
+}
+.tab-item-problem .problem .swiper .swiper-slide .textBanner .banner-title {
+  display: inline-block;
+  font-size: 34px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+  margin-top: 50px;
+}
+.tab-item-problem .problem .swiper .swiper-slide .textBanner .banner-show {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 24px;
+}
+.swiper-button-prev {
+  outline: none;
+  background: url(../../../public/images/left.png) !important;
+  left: -100px;
+}
+.swiper-button-prev img {
+  width: 51px;
+  height: 51px;
+}
+.swiper-button-next {
+  outline: none;
+  background: url(../../../public/images/right.png) !important;
+  right: -100px;
+}
+.swiper-button-next img {
+  width: 51px;
+  height: 51px;
 }

@@ -1,58 +1,275 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Expires" content="0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Cache-control" content="no-cache">
-  <meta http-equiv="Cache" content="no-cache">
-  <title>liepin-jquery</title>
-  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="public/css/normalize.css">
-  <link rel="stylesheet" href="public/css/public.css">
-  <link rel="stylesheet" href="public/css/tabBar.css">
-  <link rel="stylesheet" href="static/css/common/index.css">
-  <script>window.tlg = window.tlg || {}; tlg.dataInfo = tlg.dataInfo||{}; tlg.dataInfo.event_biz = 5; tlg.dataInfo.event_type = 4; tlg.dataInfo.event_online = 2;</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>liepin-jquery</title>
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/public.css">
+    <link rel="stylesheet" href="public/css/tabBar.css">
+    <link rel="stylesheet" href="public/css/swiper.css">
+    <link rel="stylesheet" href="static/css/common/index.css">
+    <script>window.tlg = window.tlg || {}; tlg.dataInfo = tlg.dataInfo || {}; tlg.dataInfo.event_biz = 5; tlg.dataInfo.event_type = 4; tlg.dataInfo.event_online = 2;</script>
 </head>
+
 <body>
-  <div class="app">
-    <div class="tabBar">
-        <div class="container tab">
-            <div class="left">
-                <img class="logo" src="public/images/logo.png" alt="">
+    <div class="app">
+        <header class="tabBar">
+            <div class="container tab">
+                <div class="left">
+                    <img class="logo" src="public/images/logo.png" alt="" />
+                </div>
+                <h1>薪班班官网</h1>
+                <div class="right">
+                    <ol>
+                        <li class="home">首页</li>
+                        <li class="about">关于我们</li>
+                        <li>企业登录</li>
+                        <li>用户登录</li>
+                    </ol>
+                </div>
             </div>
-            <div class="right">
-                <ol>
-                    <li class="home">首页</li>
-                    <li class="about">关于我们</li>
-                    <li>企业登录</li>
-                    <li>用户登录</li>
-                </ol>
-            </div>
-        </div>
-        <!-- <div class="clogin">
-            <img  src="public/images/clogo.png" alt="">
+            <!-- <div class="clogin">
+            <img  src="public/images/clogo.png" alt=""/>
         </div> -->
-    </div>
-    <div class="banner">
-        <img src="public/images/banner.png" alt="">
-    </div>
-    <div class="tab-item container">
-        <div class="flexJustify">
-            <h2 class="highlighted-title">
-                企业按需雇佣人才
-            </h2>
+        </header>
+        <div class="banner">
+            <img src="public/images/banner.png" alt="" />
         </div>
-        <text class="highlighted-text">
-            提高效率降低成本
-        </text>
-        <div class="content">
+        <div class="tab-item tab-itemb">
+            <div class="container">
+                <div class="flexJustify">
+                    <h2 class="highlighted-title">
+                        企业按需雇佣人才
+                    </h2>
+                </div>
+                <span class="highlighted-text">
+                    提高效率降低成本
+                </span>
+                <div class="content">
+                    <div class="left">
+                        <ol class="com_list">
+                            <li class="on" value="1">
+                                <div class="icon">
+                                    <img class="cimg1" src="public/images/c10.png" alt="" />
+                                    <img class="cimg2" src="public/images/c11.png" alt="" />
+                                </div>
+                                <h3 class="nameTitle">
+                                    降本增效
+                                </h3>
+                            </li>
+                            <li value="2">
+                                <div class="icon">
+                                    <img class="cimg1" src="public/images/c20.png" alt="" />
+                                    <img class="cimg2" src="public/images/c21.png" alt="" />
+                                </div>
+                                <h3 class="nameTitle">
+                                    高质交付
+                                </h3>
+                            </li>
+                            <li value="3">
+                                <div class="icon">
+                                    <img class="cimg1" src="public/images/c30.png" alt="" />
+                                    <img class="cimg2" src="public/images/c31.png" alt="" />
+                                </div>
+                                <h3 class="nameTitle">
+                                    服务优势
+                                </h3>
+                            </li>
+                            <li value="4">
+                                <div class="icon">
+                                    <img class="cimg1" src="public/images/c40.png" alt="" />
+                                    <img class="cimg2" src="public/images/c41.png" alt="" />
+                                </div>
+                                <h3 class="nameTitle">
+                                    资金安全
+                                </h3>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <div class="dianImg">
+                            <img src="public/images/cdian.png" alt="" />
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-container swiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="public/images/c12.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="public/images/c22.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="public/images/c32.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="public/images/c42.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-item tab-item-employment">
+            <div class="container">
+                <div class="flexJustify">
+                    <h2 class="highlighted-title">
+                        常规用工与灵活用工的区别
+                    </h2>
+                </div>
+                <div class="contentImg">
+                    <img src="public/images/employment.png" alt="" />
+                </div>
+                <div class="flexJustify" style="margin-top: 50px;">
+                    <h2 class="highlighted-title">
+                        我们解决的问题
+                    </h2>
+                </div>
+                <div class="leftImg">
+                    <img src="public/images/leftImg.png" alt="" />
+                </div>
+                <div class="rightImg">
+                    <img src="public/images/rightImg.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="tab-item-problem">
+            <div class="container">
+                <div class="problem">
+                    <div class="swiper">
+                        <div class="swiper-container swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="imgBanner">
+                                        <img src="public/images/p12.png" alt="" />
+                                    </div>
+                                    <div class="textBanner">
+                                        <h3 class="banner-title">
+                                            突破企业编制限制
+                                        </h3>
+                                        <p class="banner-show">
+                                            “灵活用工”模式的核心可以用来解决企业
+                                            突增的、巅峰期的、季节性的人员需求，打
+                                            破用工地域、用工时间的限制，从根源上解
+                                            决企业用工难和贵的问题。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgBanner">
+                                        <img src="public/images/p22.png" alt="" />
+                                    </div>
+                                    <div class="textBanner">
+                                        <h3 class="banner-title">
+                                            降低企业用工风险
+                                        </h3>
+                                        <p class="banner-show">
+                                            企业可以基于用人需求的淡旺季，灵活的按需
+                                            雇佣人才，企业与人才不建立正式的全职劳动
+                                            关系的全新用工模式。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgBanner">
+                                        <img src="public/images/p32.png" alt="" />
+                                    </div>
+                                    <div class="textBanner">
+                                        <h3 class="banner-title">
+                                            降低企业用人成本
+                                        </h3>
+                                        <p class="banner-show">
+                                            帮助企业节约招聘成本，缩短招聘周期，
+                                            提高人才保留率和人才岗位匹配率；在
+                                            薪酬、五险一金及各种税费成偏高的情形
+                                            下，降低企业人力成本，解决企业招聘、
+                                            留人困难的局面。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgBanner">
+                                        <img src="public/images/p42.png" alt="" />
+                                    </div>
+                                    <div class="textBanner">
+                                        <h3 class="banner-title">
+                                            优化企业管理成本
+                                        </h3>
+                                        <p class="banner-show">
+                                            可节省考勤管理和人事管理的成本和时间
+                                            从招聘、入项、酬金结算，还能为灵活用
+                                            工从业人员提供酬金派发等服务，节省企
+                                            业经营管理成本费，提升企业经济效益。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 分页器 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!--左箭头-->
+                        <div class="swiper-button-prev">
+                            <img src="public/images/left.png" alt="" />
+                        </div>
+                        <!--右箭头-->
+                        <div class="swiper-button-next">
+                            <img src="public/images/right.png" alt="" />
+                        </div>
+                        <div class="list">
+                            <ol class="employmentOl">
+                                <li class="on" value="1">
+                                    <div class="img">
+                                        <img class="img1" src="public/images/p10.png" alt="" />
+                                        <img class="img2" src="public/images/p11.png" alt="" />
+                                    </div>
+                                    <span>突破限制</span>
+                                </li>
+                                <li value="2">
+                                    <div class="img">
+                                        <img class="img1" src="public/images/p20.png" alt="" />
+                                        <img class="img2" src="public/images/p21.png" alt="" />
+                                    </div>
+                                    <span>降低风险</span>
+                                </li>
+                                <li value="3">
+                                    <div class="img">
+                                        <img class="img1" src="public/images/p30.png" alt="" />
+                                        <img class="img2" src="public/images/p31.png" alt="" />
+                                    </div>
+                                    <span>降低人工</span>
+                                </li>
+                                <li value="4">
+                                    <div class="img">
+                                        <img class="img1" src="public/images/p40.png" alt="" />
+                                        <img class="img2" src="public/images/p41.png" alt="" />
+                                    </div>
+                                    <span>优化成本</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
     </div>
-  </div>
 
-  <script src="static/js/common/polyfill.js"></script>
-  <script src="static/js/common/jquery.js"></script>
+    <script src="static/js/common/polyfill.js"></script>
+    <script src="static/js/common/jquery.js"></script>
+    <script src="static/js/common/swiper.js"></script>
+    <script src="static/js/index.js"></script>
 </body>
+
 </html>

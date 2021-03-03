@@ -1,15 +1,21 @@
-.banner{
+.banner {
     width: 100%;
-    img{
-        width: 100%;
-    }
-}
-.tab-item{
-    margin-top: 20px;
-    // display: flex;
-    // justify-content: center;
-}
-.highlighted-text{
+  }
+  .banner img {
+    width: 100%;
+  }
+  .tab-itemb{
+    background: #FBFBFB;
+    padding: 80px 0 110px 0;
+  }
+  .tab-item{
+      position: relative;
+  }
+  .highlighted-title{
+      z-index: 2;
+  }
+ 
+  .highlighted-text {
     font-size: 14px;
     font-family: SourceHanSansCN-Normal, SourceHanSansCN;
     font-weight: 500;
@@ -21,7 +27,271 @@
     margin: 0 auto;
     position: relative;
     top: -10px;
+  }
+  .content {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    .left{
+        ol{
+            padding-top:46px;
+            li{
+                margin-bottom: 38px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .icon{
+                    margin-right: 23px;
+                    width: 26px;
+                    height: 26px;
+                    .cimg1{
+                        width: 26px;
+                        height: 26px;
+                    }
+                    .cimg2{
+                        display: none;
+                    }
+                }
+                .nameTitle{
+                    font-size: 26px;
+                    font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                    font-weight: 500;
+                    color: #333333;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .on{
+                margin-bottom: 42px;
+                .icon{
+                    .cimg1{
+                        display: none;
+                    }
+                    .cimg2{
+                        display: block;
+                    }
+                }
+                .nameTitle{
+                    font-size: 46px;
+                    font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                    font-weight: 500;
+                    color: #000000;
+                    position: relative;
+                }
+                .nameTitle:after{
+                    content: '';
+                    display: inline-block;
+                    width: 171px;
+                    height: 6px;
+                    background: #FED83B;
+                    border-radius: 3px;
+                    border-radius: 3px;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 6px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    .right{
+        position: relative;
+        .dianImg{
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            z-index: 3;
+        }
+        .swiper{
+            width: 752px;
+            height: 426px;
+            border-radius: 16px;
+            overflow: hidden;
+            .swiper-container {
+                width: 752px;
+                height: 426px;
+              }
+            .swiper-pagination{
+                  opacity: 0;
+            }
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                img{
+                    width: 752px;
+                    height: 426px;
+                }
+            }
+        }
+    }
+  }
+  .tab-item-employment{
+    padding: 80px 0 96px 0;
+    .contentImg{
+        display: flex;
+        justify-content: center;
+        margin-top: 98px;
+        position: relative;
+        z-index: 2;
+        img{
+            width: 1153px;
+            height:645px;
+        }
+    }
+    .leftImg{
+        position: absolute;
+        left: 65px;
+        bottom: 63px;
+    }
+    .rightImg{
+        position: absolute;
+        right: 0px;
+        top: 134px;
+    }
+  }
+  .tab-item-problem{
+    width: 100%;
+    height: 600px;
+    background: #FBFBFB;
+    // padding: 68px 0;
+    .problem{
+        position: relative;
+        top: 68px;
+        .swiper{
+            width: 1140px;
+            height: 464px;
+            position: relative;
+            margin: 0 auto;
+            .list{
+                position: absolute;
+                left: 805px;
+                bottom: 0;
+                z-index: 1000;
+                ol{
+                    display: flex;
+                    li{
+                        width: 50px;
+                        margin-right: 22px;
+                        cursor: pointer;
+                        .img{
+                            width: 50px;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                               width: 36px;
+                               height: 36px;
+                            }
+                            .img2{
+                                display: none;
+                            }
+                        }
+                        span{
+                            text-align: center;
+                            margin-top: 10px;
+                            display: block;
+                            font-size: 12px;
+                            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                            font-weight: 400;
+                            color: #666666;
+                        }
+                    }
+                    .on{
+                        .img1{
+                            display: none;
+                        }
+                        .img2{
+                            display: block !important;
+                        }
+                        span{
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+            .swiper-container {
+                width: 1140px;
+                height: 464px;
+              }
+            .swiper-pagination{
+                opacity: 0;
+            }
+            // .swiper-button-prev{
+            //     outline: none;
+            //     background:url(../../../public/images/left.png) !important;
+            //     left: -100px;
+            //     img{
+            //         width: 51px;
+            //         height: 51px;
+            //     }
+            // }
+            // .swiper-button-next{
+            //     outline: none;
+            //     background:url(../../../public/images/right.png) !important;
+            //     right: 0;
+            //     img{
+            //         width: 51px;
+            //         height: 51px;
+            //     }
+            // }
+            .swiper-slide{
+                border-radius: 16px;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                .imgBanner{
+                    width: 696px;
+                    height: 464px;
+                    img{
+                        width: 696px;
+                        height: 464px;
+                    }
+                    
+                }
+                .textBanner{
+                    margin-left: 107px;
+                    .banner-title{
+                        display: inline-block;
+                        font-size: 34px;
+                        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                        font-weight: 500;
+                        color: #333333;
+                        margin: 0;
+                        margin-top: 50px;
+                    }
+                    .banner-show{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                        font-weight: 400;
+                        color: #666666;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+  }
+  .swiper-button-prev{
+    outline: none;
+    background:url(../../../public/images/left.png) !important;
+    left: -100px;
+    img{
+        width: 51px;
+        height: 51px;
+    }
 }
-.content{
-    padding: 30px;
+.swiper-button-next{
+    outline: none;
+    background:url(../../../public/images/right.png) !important;
+    right: -100px;
+    img{
+        width: 51px;
+        height: 51px;
+    }
 }
+  
+  
+  
