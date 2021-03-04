@@ -59,20 +59,18 @@ $(function() {
         $('.employmentOl li').eq(num-1).addClass('on').siblings().removeClass('on')
 
     })
-
-    $(".xiao-b").click(function() {
-        $(".xiao-b-dialog").css("visibility", "visible");
-    });
-    $(".houdao-recruitment").click(function() {
-        $(".houdao-recruitment-dialog").css("visibility", "visible");
-    });
-    $(".houdao-xbbc,.xbb-c").click(function() {
-        $(".houdao-xbbc-dialog").css("visibility", "visible");
-    });
-    $(".xiao-b-dialog, .houdao-recruitment-dialog, .houdao-xbbc-dialog,.dialog:after").click(function(e) {
-        $(this).css("visibility", "hidden");
-    });
-    $(".xiao-b-ru-zhi-kuai-img, .houdao-recruitment-img,.houdao-xbbc-img").click(function(e){
+    $('.moreImg').on('tap',function(e){
+        $('.moreImg').css('display', 'none')
+        $('.chaImg').css('display', 'block')
+        $('.nav').css('display', 'block')
+    })
+    $('.chaImg,.nav').on('tap',function(e){
+        $('.moreImg').css('display', 'block')
+        $('.chaImg').css('display', 'none')
+        $('.nav').css('display', 'none')
+    })
+   
+    $(".nav-list").click(function(e){
         // 阻止事件冒泡
         e.stopPropagation();
     });

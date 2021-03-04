@@ -162,7 +162,7 @@
 .tab-item-problem .problem .swiper .list {
   position: absolute;
   left: 805px;
-  bottom: 0;
+  bottom: -20px;
   z-index: 1000;
 }
 .tab-item-problem .problem .swiper .list ol {
@@ -201,7 +201,7 @@
   display: block !important;
 }
 .tab-item-problem .problem .swiper .list ol .on span {
-  color: #333333;
+  color: #333333 !important;
 }
 .tab-item-problem .problem .swiper .swiper-container {
   width: 1140px;
@@ -261,4 +261,95 @@
 .swiper-button-next img {
   width: 51px;
   height: 51px;
+}
+.tab-item-list {
+  padding-top: 105px;
+}
+.tab-item-list .highlighted-title {
+  margin: 0;
+}
+.tab-item-list .contentImg {
+  display: flex;
+  justify-content: center;
+}
+.tab-item-list .contentImg .work {
+  margin-top: 98px;
+  width: 1140px;
+  height: 202px;
+}
+.tab-item-list .contentImg .flexible {
+  margin-top: 83px;
+  width: 1174px;
+  height: 352px;
+}
+.tab-item-list .contentImg .security {
+  margin-top: 98px;
+  width: 1037px;
+  height: 265px;
+  padding-bottom: 77px;
+}
+.fixedRight {
+  width: 76px;
+  height: 170px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px 0px rgba(186, 186, 186, 0.5);
+  border-radius: 18px 1px 1px 18px;
+  position: fixed;
+  right: 0;
+  bottom: 300px;
+  z-index: 1000;
+}
+.fixedRight .top {
+  border-bottom: 1px solid #E9E9E9;
+  border-radius: 18px 1px 1px 0px;
+}
+.fixedRight .bot {
+  border-radius: 0px 1px 1px 18px;
+}
+.fixedRight .flex-list {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.fixedRight .flex-list .bodys {
+  position: relative;
+}
+.fixedRight .flex-list .bodys .fixedCode {
+  position: absolute;
+  left: -154px;
+  top: -56px;
+  width: 140px;
+  height: 166px;
+  display: none;
+}
+.fixedRight .flex-list .bodys .fixedCode img {
+  width: 140px;
+  height: 166px;
+}
+.fixedRight .flex-list .bodys .img {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+.fixedRight .flex-list .bodys .img img {
+  width: 30px;
+  height: 30px;
+}
+.fixedRight .flex-list .bodys span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+  font-weight: 400;
+  color: #333333;
+  width: 50px;
+  text-align: center;
+}
+.fixedRight .flex-list:hover {
+  background: #FED83B;
+}
+.fixedRight .flex-list:hover .fixedCode {
+  display: block;
 }

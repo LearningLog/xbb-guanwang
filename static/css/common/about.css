@@ -1,0 +1,81 @@
+.body {
+  padding: 60px 0 80px 0;
+}
+.abouts {
+  margin-bottom: 78px;
+}
+.tab-item {
+  margin-top: 59px;
+}
+.tab-item .title {
+  font-size: 30px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #333333;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 46px;
+}
+.tab-item .title::after {
+  content: '';
+  display: inline-block;
+  width: 120px;
+  height: 6px;
+  background: #FED83B;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  z-index: -1;
+}
+.tab-item .xbb-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tab-item .xbb-title img {
+  width: 124px;
+  height: 30px;
+}
+.tab-item .xbb-title .dian {
+  margin-left: 14px;
+  margin-right: 12px;
+  width: 6px;
+  height: 6px;
+  background: #333333;
+  border-radius: 50%;
+}
+.tab-item .xbb-title p {
+  font-size: 23px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+.tab-item .show {
+  font-size: 14px;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 22px;
+}
+.tab-item .show a {
+  color: #2A77FF;
+}
+.tab-item .show2 {
+  font-size: 14px;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 30px;
+}
+.tab-item .process {
+  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+}
+.tab-item .process img {
+  width: 784px;
+}

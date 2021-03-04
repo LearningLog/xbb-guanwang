@@ -46,4 +46,37 @@
     display: flex;
     justify-content: center;
 }
+.dialog {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin: 0;
+    border-radius: 0;
+    background: rgba(17, 17, 17, 0.6);
+    transition: all 0.3s;
+    z-index: 100000;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog:before {
+    content: 'X';
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+  }
+*{
+    box-sizing:border-box;
+}
+
 
