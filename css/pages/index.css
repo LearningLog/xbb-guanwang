@@ -246,7 +246,7 @@
 }
 .swiper-button-prev {
   outline: none;
-  background: url(../../../public/images/left.png) !important;
+  background: url(../../public/images/left.png) !important;
   left: -100px;
 }
 .swiper-button-prev img {
@@ -255,7 +255,7 @@
 }
 .swiper-button-next {
   outline: none;
-  background: url(../../../public/images/right.png) !important;
+  background: url(../../public/images/right.png) !important;
   right: -100px;
 }
 .swiper-button-next img {
