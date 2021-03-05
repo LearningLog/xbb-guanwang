@@ -1,6 +1,87 @@
+@font-face{
+    font-family: 'SourceHanSansCN-Regular';
+    src : url('../font/SourceHanSansCN-Regular.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Bold';
+    src : url('../font/SourceHanSansCN-Bold.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Medium';
+    src : url('../font/SourceHanSansCN-Medium.ttf');
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Normal';
+    src : url('../font/SourceHanSansCN-Normal.ttf');
+}
 
+*{
+    box-sizing:border-box;
+}
 
+.dialog {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin: 0;
+    border-radius: 0;
+    background: rgba(17, 17, 17, 0.6);
+    transition: all 0.3s;
+    z-index: 100000;
+    visibility: hidden;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.dialog:before {
+    content: 'X';
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+}
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.highlighted-title {
+    font-family: SourceHanSansCN-Bold;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    display: inline-block;
+    position: relative;
+}
+
+.highlighted-title:after {
+    content: '';
+    display: inline-block;
+    height: 8px;
+    width: 110%;
+    background: #FED83B;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 2px;
+    left: -5%;
+    z-index: -1;
+}
+
+.flexJustify{
+    display: flex;
+    justify-content: center;
+}
+
+.marginAuto{
+    margin: 0 auto;
+}
