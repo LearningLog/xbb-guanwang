@@ -78,5 +78,8 @@
 *{
     box-sizing:border-box;
 }
+.marginAuto{
+    margin: 0 auto;
+}
 
 

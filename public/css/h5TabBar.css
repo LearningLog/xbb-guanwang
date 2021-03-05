@@ -16,7 +16,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 }
 .tabBar .logo {
   width: 2.62rem;
@@ -49,6 +49,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 10;
   display: none;
 }
 .nav .nav-list {

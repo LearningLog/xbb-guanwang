@@ -16,14 +16,14 @@ $(function() {
             if(this.activeIndex===5){
                 num=1
             }
-            $('.com_list li').eq(num-1).addClass('on').siblings().removeClass('on')
+            $('.company-nav li').eq(num-1).addClass('on').siblings().removeClass('on')
         },
         },
     })
-    $('.com_list').on('mouseover', 'li', function (e) {
+    $('.company-nav').on('tap', 'li', function (e) {
         let num=Number($(this).attr("value"))
         swiper1.slideTo(num,1000,false)
-        $('.com_list li').eq(num-1).addClass('on').siblings().removeClass('on')
+        $('.company-nav li').eq(num-1).addClass('on').siblings().removeClass('on')
 
     })
 
@@ -32,12 +32,6 @@ $(function() {
         autoplay: {
         delay:3000,
         disableOnInteraction: false
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-            /* nextEl: '.next',
-            prevEl: '.prev' */
         },
         pagination: {
             el: '.swiper-pagination',
@@ -53,7 +47,7 @@ $(function() {
         },
         },
     })
-    $('.employmentOl').on('mouseover', 'li', function (e) {
+    $('.employmentOl').on('tap', 'li', function (e) {
         let num=Number($(this).attr("value"))
         swiper2.slideTo(num,1000,false)
         $('.employmentOl li').eq(num-1).addClass('on').siblings().removeClass('on')
